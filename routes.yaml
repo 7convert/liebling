@@ -11,6 +11,12 @@ routes:
   /account/:
     template: members/account
     data: page.account
+  /authors/:
+    template: page-authors
+  /tags/:
+    template: page-tags
+  /newsletter/:
+    template: page-newsletter
 
 collections:
   /:
