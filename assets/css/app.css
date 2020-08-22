@@ -2422,7 +2422,7 @@ _:-ms-fullscreen, :root .m-toggle-darkmode {
   flex-direction: column;
   position: relative;
   margin-bottom: 20px;
-  height: 400px;
+  height: 200px;
   background-color: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--secondary-border-color);
@@ -2441,7 +2441,7 @@ _:-ms-fullscreen, :root .m-toggle-darkmode {
 @media only screen and (min-width: 48rem) {
   .m-article-card {
     width: calc((100% / 2) - 20px);
-    height: 420px;
+    height: 220px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -2494,8 +2494,9 @@ _:-ms-fullscreen, :root .m-toggle-darkmode {
 
 .m-article-card__picture {
   position: relative;
+  width: 38%;
   height: 200px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 0 0 10px;
   background-color: var(--secondary-subtle-color);
   overflow: hidden;
 }
@@ -2599,16 +2600,19 @@ _:-ms-fullscreen, :root .m-toggle-darkmode {
 
 .m-article-card__info {
   flex: 1;
-  position: relative;
+  position: absolute;
   padding-top: 48px;
+  left: 38%;
+  width: 62%;
   height: 200px;
   overflow: hidden;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 10px 10px 0;
   background-color: var(--background-color);
 }
 @media only screen and (min-width: 48rem) {
   .m-article-card__info {
     padding-top: 53px;
+    height: 220px;
   }
 }
 .m-article-card__info.no-tag {
