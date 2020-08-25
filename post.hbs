@@ -48,6 +48,9 @@ into the {body} of the default.hbs template --}}
               </div>
             </header>
             <div class="pos-relative js-post-content">
+                {{excerpt}}
+            </div>
+            <div class="pos-relative js-post-content">
               <div class="m-share">
                 <div class="m-share__content js-sticky">
                   <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}"
@@ -81,6 +84,7 @@ into the {body} of the default.hbs template --}}
                 </section>
               {{/if}}
             </div>
+
           </div>
         </div>
         {{!-- Email subscribe form at the bottom of the page --}}
