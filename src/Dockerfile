@@ -14,13 +14,13 @@ RUN apk update && apk add git && \
     yarn global add knex-migrator grunt-cli ember-cli bower
 
 RUN git config --global http.postBuffer 524288000 && \
-    git clone --recurse-submodules https://github.com/7convert/Ghost.git  /var/lib/ghost && \
+    git clone --depth 1 --recurse-submodules https://github.com/7convert/Ghost.git  /var/lib/ghost && \
     cd /var/lib/ghost && \
     yarn setup
 
 WORKDIR /var/lib/ghost
 
-RUN grunt prod
+RUN grunt build
 
 EXPOSE 2368
 
